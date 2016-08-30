@@ -28,15 +28,15 @@ namespace SortStudentsData
             #else
 
             //Unit Test Case A - Valid File - Different Scores
-            inputFileName = @"\UnitTest\ClassA.txt";
+            inputFileName = Environment.CurrentDirectory + @"\UnitTestData\ClassA.txt";
             SortData(inputFileName);
-
+            
             //Unit Test Case A - Valid File - Same Scores
-            inputFileName = @"\UnitTest\ClassB.txt";
+            inputFileName = Environment.CurrentDirectory + @"\UnitTestData\ClassB.txt";
             SortData(inputFileName);
 
             //Unit Test Case B - InValid File
-            inputFileName =  @"\UnitTest\ClassB1.txt";
+            inputFileName = Environment.CurrentDirectory + @"\UnitTestData\ClassB1.txt";
             SortData(inputFileName);
 
             #endif
